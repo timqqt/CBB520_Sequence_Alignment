@@ -74,4 +74,5 @@ print ",\nThe deviation of INDELs is ", std_INDELs
 print "\n"
 print ",\nThe number of a window has INDELs more than 4 std from the mean is ", count_high_INDELs
 print "\n"
+print ",\nFor a poisson distribution, the number of a window has INDELs more than 4 std from the mean is ", (1-0.999999999999999999963799984190768488031889674211538688017)*12.16*10**6
 
