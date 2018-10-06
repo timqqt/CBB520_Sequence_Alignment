@@ -11,7 +11,7 @@
 Assignment 2
 
 <br>
-<a href="https://github.com/timqqt/CBB520_-Finding-SNPS-and-INDELS-">Click here to see all the program in my Github.</a>
+<a href="https://github.com/timqqt/CBB520_Sequence_Alignment">Click here to see all the program in my Github.</a>
 <br>
 <form method="post" action="/SRA_DB/function.php">
 <input type="submit" id="btn1" value="Run the program" onClick="bt_click();">
