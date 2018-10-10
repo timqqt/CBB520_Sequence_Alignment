@@ -1,7 +1,7 @@
 from Bio import SeqIO
 good_base_count = 0 # for counting high quality base
 good_pairs_count = 0 # counting the high quality pairs
-globals_steps = 0
+globals_steps = 1
 # total_good_pairs_length = 0
 for rec in SeqIO.parse("SRR4841864.fastq", "fastq"):
     sequences = rec.seq
@@ -17,9 +17,9 @@ for rec in SeqIO.parse("SRR4841864.fastq", "fastq"):
                 good_base_count = 0
                 break
             good_base_count = 0
-    if globals_steps % 10000:
-        print("Global Step: ", globals_steps)
+    if globals_steps % 100000 == 0:
+        print ",Global Step: ", globals_steps
     globals_steps += 1
 
 print ",Total numeber of good pairs is %d" % good_pairs_count
-print ",The number of coverages it represents is %d" % good_pairs_count*101/(1.3*10**7)
+print ",The number of coverages it represents is %d" % (good_pairs_count*101/(1.3*10**7))
